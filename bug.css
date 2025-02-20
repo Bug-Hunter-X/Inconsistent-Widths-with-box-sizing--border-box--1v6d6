@@ -1,0 +1,10 @@
+The following CSS rule is causing unexpected behavior:
+
+```css
+div {
+  width: 100%;
+  box-sizing: border-box;
+}
+```
+
+The issue is that while `box-sizing: border-box;` is intended to include padding and border in the element's total width, it can sometimes lead to unexpected results when dealing with nested elements or complex layouts.  The calculated width of the div might not be what's visually apparent, particularly when dealing with percentages and dynamically sized content.
